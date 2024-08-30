@@ -1,0 +1,56 @@
+/* Written by Ryan Smith */
+
+/* Structure */ 
+body{
+    background-image: url(images/wbs.jpg);
+    background-size: cover;
+}
+#content{
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 20px;
+
+}
+/* Navigation */ 
+.links a {
+    background: #73000a;
+    color: white;
+    padding: 4px;
+    border-radius: 3px;
+    margin-right:20px;
+    text-decoration: none;
+}
+.links a:hover{
+    color: grey;
+}
+/* Tables */
+table{
+    border-collapse: collapse;
+}
+th,
+td{
+    border: 4px solid black;
+    padding: 4px;
+}
+.oor{
+    background-color: #73000a;
+    color: white;
+}
+/* Lists */
+
+/* Typography */ 
+.header{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p{ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Images */
+img{
+    border: 5px solid #73000a;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    padding: 2px;
+}

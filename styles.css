@@ -1,0 +1,40 @@
+/* Written by Ryan Smith */
+
+/* Structure */ 
+body{
+    background: #333;
+}
+#content{
+    font-family: monospace, sans-serif;
+    background-color: #f4f4f9;
+    color: #333333;
+    width: 95%;
+    margin: auto;
+    padding: 1px 8px;
+    border-radius: 5px;
+}
+
+
+/* Navigation */ 
+a{
+    text-decoration: none; 
+    background: #00c853;
+    color: white;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+a:hover{
+    color: #ff7043;
+}
+
+/* Tables */
+
+/* Lists */
+li{
+    margin-bottom: 10px;
+}
+/* Typography */ 
+.header{
+    color: #1a73e8;
+}
