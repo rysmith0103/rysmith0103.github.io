@@ -1,40 +1,103 @@
 /* Written by Ryan Smith */
 
 /* Structure */ 
-body{
+body {
     background: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
-#content{
-    font-family: monospace, sans-serif;
+
+/* Header and Footer */
+header, footer {
+    text-align: center;
+    background-color: #8B0000;
+    color: white;
+    padding: 20px 0;
+}
+
+#content {
     background-color: #f4f4f9;
     color: #333333;
     width: 95%;
     margin: auto;
     padding: 1px 8px;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Assignments Section */
+.assignments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.assignment {
+    background-color: #f4f4f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 30%;
+    min-width: 280px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.assignment:hover {
+    transform: scale(1.05); 
+    background-color: #8B0000;
+}
+
+.assignment img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.description h3 {
+    margin-top: 10px;
+    color: #1a73e8;
+}
+
+.description p {
+    color: #555;
+}
 
 /* Navigation */ 
-a{
-    text-decoration: none; 
-    background: #00c853;
-    color: white;
-    padding: 2px;
-    border-radius: 3px;
-}
-
-a:hover{
-    color: #ff7043;
-}
-
-/* Tables */
 
 /* Lists */
-li{
+li {
     margin-bottom: 10px;
 }
+
 /* Typography */ 
-.header{
-    color: #1a73e8;
+.header {
+    color: #8B0000;
+}
+
+/* Media Queries */
+@media (min-width: 900px) {
+    .assignments {
+        display: flex;
+
+    }
+
+    .assignment {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .assignment img {
+        width: 100%;
+        height: auto;
+    }
+
+    .description {
+        flex: 1;
+        padding: 10px;
+        text-align: center;
+    }
+  
 }

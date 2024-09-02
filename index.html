@@ -6,21 +6,41 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="content">
-            <h1 class = "header">CSCE 242: Website Applications (Fall 2024)</h1>
+        <header>
+            <h1>CSCE 242: Website Applications (Fall 2024)</h1>
             <h2>Ryan Smith</h2>
-            <p>
-                During the course of the semester, students will utilize HTML and CSS to design the front-end of a website;
-                matching a given specification. Secondly, they will use JavaScript to add
-                functionality to their website. Lastly, they will learn to utilize node and server side
-                JavaScript to store and retrieve data from a server
-            </p>
-            <h2 class = "header">Assignments</h2>
-            <ul>
-            <li> <a href="assignments/assignment_1/index.html"> Assignment 1 (Basic HTML)</a></li>
-            <li> <a href="assignments/assignment_2/index.html"> Assignment 2 (Basic CSS)</a></li>
-            <li> <a href="assignments/assignment_3/index.html"> Assignment 3 (Page Layout)</a></li>
-            </ul>
-        </div>
+        </header>
+        
+        <main id="content">
+            <section class="assignments">
+                <a href="assignments/assignment_1/index.html" class="assignment">
+                    <img src="images/assignment1.png" alt="Screenshot of Assignment 1">
+                    <div class="description">
+                        <h3>Assignment 1: Basic HTML</h3>
+                        <p>This assignment covers the basics of HTML structure, including elements such as headers, paragraphs, lists, and links.</p>
+                    </div>
+                </a>
+                
+                <a href="assignments/assignment_2/index.html" class="assignment">
+                    <img src="images/assignment2.png" alt="Screenshot of Assignment 2">
+                    <div class="description">
+                        <h3>Assignment 2: Basic CSS</h3>
+                        <p>This assignment focuses on styling HTML elements using CSS, including properties for color, padding, margins, and borders.</p>
+                    </div>
+                </a>
+    
+                <a href="assignments/assignment_3/index.html" class="assignment">
+                    <img src="images/assignment3.png" alt="Screenshot of Assignment 3">
+                    <div class="description">
+                        <h3>Assignment 3: Page Layout</h3>
+                        <p>This assignment introduces page layout techniques, including the use of Flexbox to organize content effectively.</p>
+                    </div>
+                </a>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Ryan Smith</p>
+        </footer>
     </body>
 </html>
