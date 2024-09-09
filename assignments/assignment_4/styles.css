@@ -1,0 +1,504 @@
+/* Structure */
+#main-header{
+    top: 0;
+    width: 100%;
+    position: sticky;
+}
+#main-image{
+    background-image: url(https://place-hold.it/1200); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 400px; 
+    width: 100%; 
+}
+.content-width {
+    width: 90%;
+    margin: 0 auto; 
+    max-width: 1200px; 
+  }
+#topinfo{
+    background-color: black;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.full-length-black{
+    width: 100%;
+    background-color: black; /* Example background color */
+    padding: 20px 0; /* Some padding for spacing */
+}
+#degree-content{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Search Box */
+.search{
+    height: 10%;
+    margin-top: 20px;
+    border: white solid .5px;
+    background-color: black;
+    color: white;
+    padding: 1px;
+    float: right;
+}
+/* Top bar in Navigation */ 
+#top-nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style-type: none;
+    font-size: x-small;
+}
+#top-nav a{
+    text-decoration: none;
+    color: white;
+    justify-content: space-between;
+}
+#top-nav a:hover{
+    background-color: #CB2E40;
+}
+#top-nav{
+    text-align: left;
+}
+
+/* Navigation */
+#main-nav{
+    background-color: #73010A;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+#main-nav a{
+    text-decoration: none;
+    color: white;
+}
+#main-nav li{
+    list-style-type: none;
+    text-align: center;
+}
+#main-nav a:hover{
+    background-color: #CB2E40;
+}
+
+/* Typography */
+header{
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Images */
+#main-image img{
+    width: fit-content;
+    height: fit-content;
+    padding-top: 0;
+}
+#lab-image img{
+    max-width: 90%;
+    height: fit-content;
+    width: auto;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+/*admissions info section */ 
+#admissions-content h1{
+    color: #73000A;
+    width: fit-content;
+    font-weight: 800;
+}
+#admissions-content{
+    text-align: left;
+}
+
+/*degree progam info */ 
+#degree-description{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0 auto;
+}
+#degree-content{
+    background-color:#73000A;
+}
+#button{
+    text-decoration: none;
+    border: 0.5px solid white;
+    background-color: black;
+    justify-content: start;
+    width: fit-content;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+#button a{
+    color: white;
+    text-decoration: none;
+}
+
+/* tuition information */ 
+#tuition-information{
+    display: flex;
+    flex-direction: column;
+    background-color: #ECECEC;
+    justify-content: center;
+    margin: 0;
+}
+#text{
+    text-align: center;
+}
+#text h1{
+    color: #73000A;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+}
+#tuition{
+    text-decoration: none;
+    border: 3px solid white;
+    background-color: #73000A;
+    align-items: flex-end;
+    padding: 15px;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 60px;
+}
+#tuition a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Paying for school section */
+#paying-for-school{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+#top-text{
+    text-align: center;
+}
+#paying-for-school h1{
+    color: #73000A;
+}
+.gateway{
+    justify-content: center;
+}
+.gateway a{
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    margin: auto;
+}
+.gateway li{
+    list-style-type: none;
+    text-align: center;
+    color: black;
+}
+.description-payment{
+    text-align: left;
+}
+
+/* Next steps section */ 
+#next-steps{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+#apply{
+    text-decoration: none;
+    border: 3px solid white;
+    background-color: #73000A;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 100px;
+}
+#next-steps img{
+    justify-content: center;
+    margin: auto;
+}
+#apply a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */ 
+footer {
+    background-color: #73000A;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo-social {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo-social img {
+    width: 100px; 
+    margin-bottom: 10px; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+.social-icons a img {
+    width: 40px; 
+    height: 40px;
+    transition: transform 0.3s ease; 
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1); 
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer-column {
+    margin-right: 20px;
+    flex: 1;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    flex: 1 1 45%;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #f44336;
+}
+
+.footer-bottom {
+    background-color: #000; 
+    color: white; 
+    text-align: center; 
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 12px; 
+    color: #ffffff;
+}
+
+.footer-bottom a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 10px; 
+}
+
+/* Larger Resolutions */ 
+
+@media (min-width:900px){
+    #main-header{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    #main-nav ul{
+        display: flex;
+    }
+    #main-nav li{
+        flex: 1;
+    }
+    #topinfo #top-nav{
+        display: flex;
+        margin-left: 20px;
+    }   
+    #top-nav{
+        flex-direction: row;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+    #main-nav-middle{
+        display: flex;
+        justify-content: space-between;
+    }
+    #payment-support{
+        padding: 20px;
+    }
+    .flex-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .flex-list .gateway {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 15px;
+        box-sizing: border-box;
+        transition: transform 0.2s ease;
+      }
+      
+      .flex-list .gateway img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      
+      .flex-list .gateway h3 {
+        margin: 10px 0;
+        font-size: 1.2em;
+      }
+      
+      .flex-list .gateway p {
+        font-size: 0.9em;
+        color: #555;
+      }
+    
+    #next-steps{
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Admissions section */
+    #admissions-title{
+        background-color: #73000A;
+        color: white;
+        width: fit-content;
+        font-size: larger;
+        margin-top: -50px;
+    }
+    #admissions-content{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto; 
+        max-width: 1200px; 
+    }
+    
+    /* explore degree programs section */ 
+    #degree-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #degree-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #lab-image {
+        flex: 1;
+        width: 50%;
+    }
+
+    #lab-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    #degree-description {
+        flex: 1;
+        text-align: left; 
+        padding-left: 20px; 
+    }
+
+    /* Take the next step section */ 
+
+    /* Footer */ 
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    /* Logo and social icons */
+    .footer-logo-social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        width: 100%; 
+    }
+    
+    .footer-logo-social img {
+        width: 200px; 
+        height: auto;
+    }
+    
+    .social-icons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px; 
+    }
+    
+    .social-icons a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Footer columns */ 
+    .footer-container {
+        flex-direction: row;
+    }
+
+    .footer-columns {
+        flex-direction: row;
+    }
+
+    .footer-column {
+        flex: 1;
+    }
+
+    .social-icons {
+        justify-content: flex-end;
+    }
+
+    .footer-bottom{
+        text-align: left;
+    }
+}
