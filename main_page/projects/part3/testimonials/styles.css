@@ -1,10 +1,11 @@
 /* Color Variables */ 
 :root {
     --header-background: #F5F5DC;
-    --white: #faf0e6;
+    --white: #fff;
     --logo-green: #003200;
     --black: #000000;
     --hover-color: #FFD700;
+    --grey: #555;
   }
 /* Structure */ 
 body{
@@ -151,6 +152,77 @@ footer {
     transform: scale(1.1); 
 }
 
+/* Main page content */ 
+/* Testimonial Section */
+.testimonial-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: var(--white);
+}
+.testimonial-header h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+.testimonial-container {
+    width: 60%;
+}
+.testimonial {
+    background-color: var(--white);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.customer-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.location, .rating {
+    color: var(--grey);
+}
+.estimate-form {
+    width: 35%;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.estimate-form h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.estimate-form form {
+    display: flex;
+    flex-direction: column;
+}
+.estimate-form input, .estimate-form select, .estimate-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--grey);
+}
+.estimate-form button {
+    padding: 10px;
+    background-color: var(--logo-green);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+.estimate-form button:hover {
+    background-color: var(--logo-green);
+}
+.clock-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+
 /* smaller screens */ 
 @media (max-width: 900px) {
     /* Header adjustments */
@@ -190,4 +262,14 @@ footer {
     .fa {
         font-size: 16px; 
     }
+
+    /* Main content section */ 
+    .testimonial-section {
+        flex-direction: column;
+    }
+
+    .testimonial-container, .estimate-form {
+        width: 100%;
+    }
+   
 }
