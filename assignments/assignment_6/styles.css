@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+#main-header {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #4a7a8c;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: #d18b8b;
+}
+
+/* Main nav */
+#main-nav {
+    position: relative;
+    text-align: center;
+}
+
+#menu-toggle {
+    display: none; 
+}
+
+#menu-arrow {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Navigation Items */
+#nav-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-items li {
+    position: relative;
+}
+
+#nav-items li a {
+    text-decoration: none;
+    color: #4a7a8c;
+    font-weight: bold;
+    padding: 0 10px;
+    cursor: pointer; 
+}
+#nav-items li::after {
+    content: '|';
+    color: #4a7a8c;
+    padding-left: 10px;
+}
+#nav-items li:last-child::after {
+    content: ''; 
+}
+#nav-items li a:hover {
+    color: #d18b8b;
+}
+
+/* Hidden */
+.hidden {
+    display: none;
+}
+
+/* Exercises */
+.exercise-section {
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 80%;
+    background-color: #f9f7df;
+}
+
+/* Color Slider */
+#color-slider-section {
+    background-color: rgb(0, 0, 0); 
+    color: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    max-width: 400px;
+    margin: 0 auto; 
+}
+
+/* Styling the red slider */
+#red-slider {
+    -webkit-appearance: none; 
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background: white; 
+    outline: none; 
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+#red-slider:hover {
+    opacity: 1; 
+}
+#red-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #8B0000; 
+    cursor: pointer; 
+}
+#red-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #8B0000;
+    cursor: pointer;
+}
+#slider-value, #color-message {
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Image */
+#image-display img {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: 1px solid #555;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+/* Small Screens */
+@media (max-width: 900px) {
+    #menu-toggle {
+        display: block;
+        text-align: left;
+        padding-right: 20px;
+    }
+    #nav-items {
+        display: none;
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+        background-color: #f7f7f7;
+    }
+    #nav-items li {
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+    }
+    #nav-items li::after {
+        content: '';
+    }
+    #menu-arrow {
+        font-size: 15px;
+        color:#4a7a8c;
+    }
+}
+

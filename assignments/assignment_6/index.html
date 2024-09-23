@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>Assignment 6</h1>
+        <p class="subheading">If Statements</p>
+        <nav id="main-nav">
+            <span id="menu-toggle">
+                <span id="menu-arrow">&#9660;</span> 
+            </span>
+            <ul id="nav-items">
+                <li><a href="#" id="show-color-slider">Exercise 1</a></li>
+                <li><a href="#" id="show-picture-chooser">Exercise 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section id="color-slider-section" class="hidden exercise-section">
+            <h2>Color Slider</h2>
+            <input id="red-slider" type="range" min="0" max="255" value="0" />
+            <p id="color-message"></p>
+        </section>
+        <section id="picture-chooser-section" class="hidden exercise-section">
+            <h2>Picture Chooser</h2>
+            <button id="small-picture-btn">Small</button>
+            <button id="medium-picture-btn">Medium</button>
+            <button id="large-picture-btn">Large</button>
+            <div id="image-display"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
