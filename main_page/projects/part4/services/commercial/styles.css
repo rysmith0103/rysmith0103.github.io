@@ -1,11 +1,10 @@
 /* Color Variables */ 
 :root {
     --header-background: #F5F5DC;
-    --white: #fff;
+    --white: #faf0e6;
     --logo-green: #003200;
     --black: #000000;
     --hover-color: #FFD700;
-    --grey: #555;
   }
 /* Structure */ 
 body{
@@ -13,6 +12,7 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Logo and nav bar */ 
 /* Logo and nav bar */ 
 #main-header {
     background-color: var(--logo-green); 
@@ -194,81 +194,67 @@ footer {
     transform: scale(1.1); 
 }
 
-/* Main page content */ 
-/* Testimonial Section */
-.testimonial-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    background-color: var(--white);
-}
-.testimonial-header h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+/* Main screen content */ 
+/* Services Section */
+.services-section {
     text-align: center;
-    width: 100%;
-}
-.testimonial-container {
-    width: 60%;
-}
-.testimonial {
-    background-color: var(--white);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.customer-name {
-    font-weight: bold;
-    margin-top: 10px;
+    padding: 50px;
+    background-color: #f4f4f4;
 }
 
-.location, .rating {
-    color: var(--grey);
+.services-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
-.estimate-form {
-    width: 35%;
-    background-color: var(--white);
-    padding: 20px;
+
+.services-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-box {
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: left;
 }
-.estimate-form h2 {
-    font-size: 24px;
+
+.service-box img {
+    width: 100%;
+    border-radius: 8px;
     margin-bottom: 15px;
 }
 
-.estimate-form form {
-    display: flex;
-    flex-direction: column;
-}
-.estimate-form input, .estimate-form select, .estimate-form textarea {
-    padding: 10px;
+.service-box h3 {
+    font-size: 22px;
     margin-bottom: 10px;
-    border-radius: 4px;
-    border: 1px solid var(--grey);
-}
-.estimate-form button {
-    padding: 10px;
-    background-color: var(--logo-green);
-    color: var(--white);
-    border: none;
-    cursor: pointer;
-}
-.estimate-form button:hover {
-    background-color: var(--logo-green);
-}
-.clock-icon {
-    font-size: 24px;
-    margin-right: 10px;
 }
 
+.service-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
 
+.read-more {
+    font-size: 14px;
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 /* smaller screens */ 
 @media (max-width: 900px) {
-    /* Header adjustments */
-    #main-header {
+     /* Header adjustments */
+     #main-header {
         flex-direction: column; 
         padding: 10px;
         align-items: flex-start;
@@ -350,6 +336,7 @@ footer {
         margin-bottom: 20px;
     }
 
+
     /* Footer adjustments */
     .footer-container {
         flex-direction: column; 
@@ -368,13 +355,8 @@ footer {
         font-size: 16px; 
     }
 
-    /* Main content section */ 
-    .testimonial-section {
-        flex-direction: column;
-    }
-
-    .testimonial-container, .estimate-form {
+    /* Services Section */ 
+    .service-box {
         width: 100%;
     }
-   
 }

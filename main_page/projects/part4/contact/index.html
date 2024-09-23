@@ -4,6 +4,7 @@
         <title>T&C Landscaping</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header id="main-header">
@@ -11,12 +12,23 @@
                 <div class="logo">
                     <img src="../home/images/T&CLogo.jpg" alt="Town and country landscaping logo">
                 </div>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <i class="fa fa-bars"></i>
+                </div>
                 <div id="main-nav-container">
                     <nav id="main-nav">
                         <ul>
                             <li><a href="../home/index.html">Home</a></li>
                             <li><a href="../about_us/index.html">About us</a></li>
-                            <li><a href="../services/index.html">Services</a></li>
+                            <li class="drop-down-container">
+                                <a href="#">Services</a>
+                                <div class="dropdown-content">
+                                    <ul>
+                                        <li><a href="../services/residential/index.html">Residential</a></li>
+                                        <li><a href="../services/commercial/index.html">Commercial</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li><a href="../testimonials/index.html">Testimonials</a></li>
                             <li><a href="../contact/index.html" class="contact-us-btn active">Contact Us</a></li>
                         </ul>
@@ -86,5 +98,6 @@
                 </div>
             </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
