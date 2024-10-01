@@ -1,0 +1,51 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+#main-header {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #4a7a8c;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: #d18b8b;
+}
+.image-container {
+    display: inline-flex;
+    margin: 20px;
+}
+img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.title-description {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.title-description h1 {
+    color: black;
+}
+
+
+
+/* Small Screens */
+@media (max-width: 900px) {
+    
+}
+

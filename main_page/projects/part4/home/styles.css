@@ -70,6 +70,8 @@ body{
     z-index: 1;
 }
 .dropdown-content ul {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     margin: 0;

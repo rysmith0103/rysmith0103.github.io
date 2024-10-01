@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+#main-header {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #4a7a8c;
+}
+.subheading {
+    font-size: 1.2rem;
+    color: #d18b8b;
+}
+
+/* Main box section */ 
+#main-content{
+    display: flex;
+    justify-content: center;
+}
+#main-background{
+    background-color: #73010A;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#top-info{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    width: 75%;
+    gap: 5px;
+    margin-top: 10px;
+}
+#star-input{
+    width: 60px;
+}
+#star-area{
+    background-color: black;
+    border: white solid 2px;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+}
+
+#error-message{
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.star {
+    position: absolute;
+    font-size: 25px; 
+    color: yellow;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#star-area {
+    position: relative;
+    overflow: hidden;
+}
+
+
