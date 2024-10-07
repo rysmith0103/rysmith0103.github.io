@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>T&C Landscaping</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header id="main-header">
+            <div id="logo-nav-box">
+                <div class="logo">
+                    <img src="images/T&CLogo.jpg" alt="Town and country landscaping logo">
+                </div>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div id="main-nav-container">
+                    <nav id="main-nav">
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="../about_us/index.html">About us</a></li>
+                            <li class="drop-down-container">
+                                <a href="#">Services</a>
+                                <div class="dropdown-content">
+                                    <ul>
+                                        <li><a href="../services/residential/index.html">Residential</a></li>
+                                        <li><a href="../services/commercial/index.html">Commercial</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="../testimonials/index.html">Testimonials</a></li>
+                            <li><a href="../contact/index.html" class="contact-us-btn">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main id="main-content">
+            <div class="slideshow-container">
+                <!-- Slide 1 -->
+                <div class="slide fade">
+                    <img src="images/ss_image1.jpg" alt="Slide 1" class="slideshow-image">
+                    <div class="text">Caption Text 1</div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="slide fade">
+                    <img src="images/ss_image2.jpg" alt="Slide 2" class="slideshow-image">
+                    <div class="text">Caption Text 2</div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slide fade">
+                    <img src="images/ss_image3.jpg" alt="Slide 3" class="slideshow-image">
+                    <div class="text">Caption Text 3</div>
+                </div>
+                
+                <!-- Navigation controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <section class="design-section">
+                <div class="text-content">
+                    <h2>Providing services since 1976</h2>
+                    <p class="highlight-text">LANDSCAPE DESIGN, HARDSCAPING, MAINTENANCE & MORE...</p>
+                    <p>Town & Country Landscaping has been dedicated to enhancing the beauty and value of properties across Berks County and the surrounding areas. Our team of experienced professionals specializes in delivering top-quality landscaping services, including detailed landscape design, hardscaping, and comprehensive maintenance.</p>
+                </div>
+                <div class="image-content">
+                    <img src="images/grassmowing.jpg" alt="Landscape Design">
+                </div>
+            </section>
+            <section class="testimonials-section">
+                <div class="testimonial-box">
+                    <p>“Town & Country Landscaping transformed our yard into a beautiful outdoor oasis. Their attention to detail and professionalism were exceptional!”</p>
+                    <p class="author">John D.</p>
+                </div>
+        
+                <div class="testimonial-box">
+                    <p>“We were extremely pleased with the hardscaping work they completed for us. Their team was reliable, efficient, and a pleasure to work with.”</p>
+                    <p class="author">Jane S.</p>
+                </div>
+        
+                <div class="testimonial-box">
+                    <p>“Our business property has never looked better. The team at Town & Country consistently provides outstanding service and care."</p>
+                    <p class="author">Michael T.</p>
+                </div>
+            </section>
+            <section class="services">
+                <h2>First-Class Services</h2>
+                <div class="service-boxes">
+                    <div class="service-box">
+                        <h3>COMMERCIAL</h3>
+                        <p>We offer professional landscaping and maintenance services to keep your commercial property looking pristine year-round. Whether it’s routine care, seasonal plantings, or complete landscape overhauls, we have the expertise to elevate your business’s exterior.</p>
+                        <a href="../services/commercial/index.html" class="btn">Learn More</a>
+                    </div>
+                    <div class="service-box">
+                        <h3>RESIDENTIAL</h3>
+                        <span class="badge">MOST POPULAR</span>
+                        <p>Transform your outdoor space into a beautiful retreat. Our residential services include lawn maintenance, hardscaping, custom landscape designs, and more. We ensure that your home’s landscape is a true reflection of your style and vision.</p>
+                        <a href="../services/residential/index.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo-social">
+                    <img src="images/T&CLogo.jpg" alt="">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="../services/residential/index.html">Residential</a></li>
+                            <li><a href="../services/commercial/index.html">Commercial</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="#">495 Mountain View Road</a></li>
+                            <li><a href="#">(444)-444-4444</a></li>
+                            <li><a href="#">Mon-Fri 7:00am - 5:00pm</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
