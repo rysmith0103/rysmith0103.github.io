@@ -197,8 +197,48 @@ footer {
 }
 
 /* Page Content */ 
-
-
+#main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#eachFaq{
+    list-style: none;
+    cursor: pointer;
+    width: 90%; /* Set width to 80% of the available space */
+    max-width: 900px; /* Limit the max width to keep the content well centered */
+    margin: 0 auto; /* Auto margins for centering */
+    padding: 0;
+    padding-bottom: 40px;
+}
+.hidden {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    border-left: 4px solid var(--logo-green);
+    text-align: center; /* Center the answer text */
+   
+  }
+.qaBucket:hover + .hidden {
+    display: block;
+    transition: color 0.3s ease;
+  }
+  .qaBucket:hover + .hidden:hover {
+    color: var(--hover-color);
+}
+.qaBucket:hover {
+    background-color: var(--hover-color); /* Changes background on hover */
+}
+  .qaBucket {
+    padding: 15px 15px; /* Adding padding to give more space */
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #f0f0f0; /* Background for distinction */
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
 
 /* smaller screens */ 
 @media (max-width: 900px) {
