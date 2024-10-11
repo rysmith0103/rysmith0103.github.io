@@ -20,14 +20,23 @@ const config = {
   };
 const getIceCreamItem = (iceCream) => {
     let ul = document.getElementById("eachIceCream");
-    ul.append(getLi(iceCream.image));
-    
+    ul.append(getLi({ image: iceCream.image, name: iceCream.name }));
 }
-const getLi = data => {
+const getLi = ({ image, name }) => {
     const li = document.createElement("li");
     const img = document.createElement('img');
-    img.src = config.baseUrl + data;
-    li.appendChild(img);
+    img.src = config.baseUrl + image;
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+    const text = document.createElement('span');
+    text.className = 'ice-cream-name';
+    text.innerText = name;
+    overlay.append(text);
+
+    // Append the image and overlay to the list item
+    li.append(img);
+    li.append(overlay);
+
     return li;
-}
+};
 window.onload = () => showIceCream();

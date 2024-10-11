@@ -23,3 +23,29 @@ footer {
     justify-content: center;
     gap: 20px;
 }
+
+#eachIceCream li {
+    position: relative;
+}
+
+/* Style the overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);  
+    color: #fff;  
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* Display the overlay text on hover */
+#eachIceCream li:hover .overlay {
+    opacity: 1;
+}
+.ice-cream-name {
+    font-size: 16px;
+    font-weight: bold;
+}
