@@ -1,5 +1,4 @@
-{
-    "faq": [
+[
       {
         "_id": 1,
         "question": "How can I prepare my lawn for the fall season?",
@@ -104,6 +103,5 @@
         "category": "Landscape Design",
         "updated_date": "2024-07-01"
       }
-    ]
-  }
+]
   
