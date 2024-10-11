@@ -1,0 +1,25 @@
+/* Body */ 
+body{
+    background-color: #FCF7E7;
+}
+header h1{
+    color: #F386AD;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+#credit{
+    display: flex;
+    justify-content: center;
+}
+#eachIceCream{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+}
