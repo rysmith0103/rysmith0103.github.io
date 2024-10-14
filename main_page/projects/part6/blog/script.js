@@ -1,3 +1,12 @@
+ // Get the elements
+ const hamburgerMenu = document.getElementById('hamburger-menu');
+ const navContainer = document.getElementById('main-nav-container');
+
+ // Toggle the menu when the hamburger icon is clicked
+ hamburgerMenu.onclick = () => {
+     navContainer.classList.toggle('show');
+ };
+
 const getBlog = async () => {
     const url = "https://rysmith0103.github.io/faq.json"
 
@@ -22,26 +31,25 @@ const getBlogQuestion = (blogPost) => {
     ul.append(getLi(blogPost.question, blogPost.answer));
 }
 const getLi = (question, answer) => {
-    // Create the <li> element
+    //<li> element
     const li = document.createElement("li");
-    // Create the first div with the class "qaBucket" for the question
+    // first div with the class "qaBucket" for the question
     const questionDiv = document.createElement("div");
     questionDiv.className = "qaBucket";
-    questionDiv.textContent = question; // Set the question text content
+    questionDiv.textContent = question; 
   
-    // Create the second div with the class "hidden" for the answer
+    // second div with the class hidden
     const answerDiv = document.createElement("div");
     answerDiv.className = "hidden";
-    answerDiv.textContent = answer; // Set the answer text content
-    
+    answerDiv.textContent = answer; 
+
     questionDiv.addEventListener("click", () => {
-        answerDiv.classList.toggle("hidden"); // Toggle answer visibility on click
+        answerDiv.classList.toggle("hidden");
     });
-    // Append the question and answer divs to the <li>
+    // Append the question and answer
     li.appendChild(questionDiv);
     li.appendChild(answerDiv);
   
-    // Return the constructed <li> element
     return li;
   };
   
