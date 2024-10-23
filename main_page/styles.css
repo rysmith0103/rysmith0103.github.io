@@ -52,6 +52,14 @@ header, footer {
     background-color: #8B0000;
 }
 
+.assignment:hover a {
+    color: white;
+}
+
+.assignment:hover p {
+    color: white;
+}
+
 .assignment img {
     max-width: 100%;
     border-radius: 8px;
